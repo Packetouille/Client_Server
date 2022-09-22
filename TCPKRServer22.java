@@ -14,7 +14,7 @@ class TCPKRServer22{
         DataOutputStream outToClient = new DataOutputStream(connectionSocket.getOutputStream());
         
         while(true){
-        // Keeps server on until user inputs exit, at which point a break from the loop will occurr
+        // Keeps server on until user inputs exit, at which point a break from the loop will occur
             clientString = inFromClient.readLine();
             System.out.println("Received from Client: " + clientString);    //Fulfills 1.6
 
