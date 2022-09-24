@@ -6,8 +6,13 @@ class TCPKRClient22{
         String userInput;
         String serverResponse;
 
+        // To read incoming character data from Client use BufferedReader
         BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
+        
+        //Create socket, connection to hostid and port#. TCP connection setup
         Socket clientSocket = new Socket("localhost", 11111);
+
+        // To send binary data use DataOutputStream, to read incoming character data use BufferedReader
         DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
         BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 

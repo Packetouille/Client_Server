@@ -7,10 +7,14 @@ class TCPKRServer22{
         String urlSelection = "";
         String htmlReturnedData = "";
 
+        // Create socket for incoming request
         ServerSocket welcomeSocket = new ServerSocket(11111);   // Fulfills 1.5
+
+        // Wait for incoming connection request. TCP Connection setup
         Socket connectionSocket = welcomeSocket.accept();            // Fulfills 1.5
 
-        BufferedReader inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
+        // To read incoming character data use BufferedReader, to send binary data use DataOutputStream
+        BufferedReader inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));        
         DataOutputStream outToClient = new DataOutputStream(connectionSocket.getOutputStream());
         
         while(true){
@@ -41,7 +45,7 @@ class TCPKRServer22{
                 break;
             } else{
                 System.out.println(urlSelection);
-                outToClient.writeBytes(urlSelection + '\n');
+                outToClient.writeBytes(urlSelection + '\n');    // '\n' is necessary. Don't know why yet.
             }
         }
     }
