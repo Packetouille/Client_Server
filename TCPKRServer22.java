@@ -13,7 +13,7 @@ class TCPKRServer22{
         // Wait for incoming connection request. TCP Connection setup
         Socket connectionSocket = welcomeSocket.accept();            // Fulfills 1.5
 
-        // To read incoming character data use BufferedReader, to send binary data use DataOutputStream
+        // Create input (BufferedReader) & output (DataOutputStream) stream attached to socket
         BufferedReader inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));        
         DataOutputStream outToClient = new DataOutputStream(connectionSocket.getOutputStream());
         
