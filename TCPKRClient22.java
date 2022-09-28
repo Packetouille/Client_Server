@@ -17,7 +17,7 @@ class TCPKRClient22{
         BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
         do{
-            System.out.println("enter an integer 1, 2, 3 or exit: ");     // Fulfills 1.1   
+            System.out.println("enter an integer 1, 2, 3, or exit: ");     // Fulfills 1.1   
             userInput = inFromUser.readLine();                              // Fulfills 1.2
             outToServer.writeBytes(userInput + '\n');                       // Fulfills 1.3. Send line to server
             if(!userInput.equals("exit")){
