@@ -1,3 +1,5 @@
+// To compile and run the code use commands "javac .java" followed by java .java in the command line.
+
 import java.io.*;
 import java.net.*;
 
