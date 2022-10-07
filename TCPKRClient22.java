@@ -1,4 +1,4 @@
-// To compile and run the code use commands "javac .java" followed by java .java in the command line.
+// To compile and run the code use commands "javac ___TCPClient.java" followed by java ___TCPClient.java in the command line.
 
 import java.io.*;
 import java.net.*;
