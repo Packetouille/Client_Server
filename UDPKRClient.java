@@ -6,7 +6,7 @@ class UDPKRClient22 {
    BufferedReader inFromUser=
     new BufferedReader(new InputStreamReader(System.in));
    DatagramSocket clientSocket = new DatagramSocket();                      // For UDP. Note: No port number. There's no connection
-   InetAddress IPAddress = InetAddress.getByName("localhost");        // Java represents ip addresses using InetAddress class. Resolving the IP takes place here
+            // Java represents ip addresses using InetAddress class. Resolving the IP takes place here
    byte[] sendData = new byte[1024];
    byte[] receiveData = new byte[1024];
    String sentence=inFromUser.readLine();

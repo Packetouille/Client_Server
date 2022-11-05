@@ -1,4 +1,4 @@
-// To compile and run the code use commands "javac ___TCPServer.java" followed by "java ___TCPServer.java" in the command line.
+// To compile and run the code use commands "javac ApplesA1TCPServer.java" followed by "java ApplesTCPServer.java" in the command line.
 
 import java.io.*;
 import java.net.*;
